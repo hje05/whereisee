@@ -1,0 +1,77 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+header, footer {
+	background: radial-gradient(floralwhite, lightpink);
+	text-align: center;
+}
+h1 {
+	padding: 10px;
+}
+section {
+	background-color: floralwhite;
+	width: 300px;
+	padding: 15px;
+	margin-top: 20px;
+	word-break: keep-all
+}
+h2 {
+	background-color: lightpink;
+	text-align: center;
+	padding: 10px;
+	margin-bottom: 10px;
+	color: floralwhite;
+}
+img {
+	width: 300px;
+}
+article {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	text-align: left;
+}
+p {
+	line-height: 1.6;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+li {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+}
+a {
+	color: black;
+}
+.me, .de {
+	text-align: center;
+	width: 20vw;
+	height: 20vh;
+	border-radius: 100px;
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+} 
+.me {
+	background: radial-gradient(lightpink, floralwhite);
+	box-shadow: 10px 10px 50px 10px lightyellow;
+	position: absolute;
+	top: 100px;
+	left: 200px;
+}
+.de {
+	background: radial-gradient(floralwhite, lightpink);
+	box-shadow: 10px 10px 50px 10px lightyellow;
+	position: absolute;
+	top: 100px;
+	right: 200px;
+}
+footer {
+	margin-top: 30vh;
+	padding: 1px;
+	letter-spacing: 1px;
+}
