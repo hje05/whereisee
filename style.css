@@ -3,8 +3,9 @@
 	margin: 0;
 }
 header, footer {
-	background: radial-gradient(floralwhite, lightpink);
+	background: radial-gradient(lightpink, floralwhite);
 	text-align: center;
+	letter-spacing: 1px;
 }
 h1 {
 	padding: 10px;
@@ -32,6 +33,7 @@ article {
 	flex-wrap: wrap;
 	justify-content: space-around;
 	text-align: left;
+	margin-bottom: 30px;
 }
 p {
 	line-height: 1.6;
@@ -50,28 +52,55 @@ a {
 }
 .me, .de {
 	text-align: center;
-	width: 20vw;
-	height: 20vh;
-	border-radius: 100px;
+	width: 300px;
+	height: 300px;
+	border-radius: 150px;
 	writing-mode: vertical-rl;
 	text-orientation: upright;
 } 
 .me {
 	background: radial-gradient(lightpink, floralwhite);
-	box-shadow: 10px 10px 50px 10px lightyellow;
 	position: absolute;
-	top: 100px;
-	left: 200px;
+	top: 220px;
+	left: 600px;
+	border: 3px solid lightpink;
 }
 .de {
 	background: radial-gradient(floralwhite, lightpink);
-	box-shadow: 10px 10px 50px 10px lightyellow;
 	position: absolute;
-	top: 100px;
-	right: 200px;
+	top: 380px;
+	right: 600px;
+	border: 3px solid floralwhite;
+}
+nav {
+	min-height: 785px;
 }
 footer {
-	margin-top: 30vh;
 	padding: 1px;
-	letter-spacing: 1px;
+	position: relative;
+	transform: translateY(0%);
+}
+@media screen and (max-width: 900px) {
+	.me, .de {
+	text-align: center;
+	width: 250px;
+	height: 250px;
+	border-radius: 200px;
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+	}
+	.me {
+		background: radial-gradient(lightpink, floralwhite);
+		position: absolute;
+		top: 180px;
+		left: 180px;
+		border: 3px solid lightpink;
+	}
+	.de {
+		background: radial-gradient(floralwhite, lightpink);
+		position: absolute;
+		top: 380px;
+		right: 180px;
+		border: 3px solid floralwhite;
+	}
 }
