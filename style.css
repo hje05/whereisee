@@ -92,15 +92,18 @@ footer {
 	.me {
 		background: radial-gradient(lightpink, floralwhite);
 		position: absolute;
-		top: 180px;
-		left: 180px;
+		top: 20vh;
+		left: 15vw;
 		border: 3px solid lightpink;
 	}
 	.de {
 		background: radial-gradient(floralwhite, lightpink);
 		position: absolute;
-		top: 380px;
-		right: 180px;
+		top: 40vh;
+		right: 15vw;
 		border: 3px solid floralwhite;
+	}
+	li {
+		font-size: 16pt;
 	}
 }
