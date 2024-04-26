@@ -93,14 +93,14 @@ footer {
 		background: radial-gradient(lightpink, floralwhite);
 		position: absolute;
 		top: 20vh;
-		left: 12vw;
+		left: 10vw;
 		border: 3px solid lightpink;
 	}
 	.de {
 		background: radial-gradient(floralwhite, lightpink);
 		position: absolute;
 		top: 40vh;
-		right: 12vw;
+		right: 10vw;
 		border: 3px solid floralwhite;
 	}
 	li {
