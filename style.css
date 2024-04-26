@@ -104,6 +104,9 @@ footer {
 		border: 3px solid floralwhite;
 	}
 	li {
-		font-size: 16pt;
+		font-size: 15pt;
+	}
+	p {
+		font-size: 13pt;
 	}
 }
