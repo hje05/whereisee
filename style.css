@@ -62,14 +62,14 @@ a {
 	background: radial-gradient(lightpink, floralwhite);
 	position: absolute;
 	top: 220px;
-	left: 600px;
+	left: 35vw;
 	border: 3px solid lightpink;
 }
 .de {
 	background: radial-gradient(floralwhite, lightpink);
 	position: absolute;
 	top: 380px;
-	right: 600px;
+	right: 35vw;
 	border: 3px solid floralwhite;
 }
 nav {
@@ -80,7 +80,21 @@ footer {
 	position: relative;
 	transform: translateY(0%);
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1350px) {
+	.me {
+		width: 280px;
+		height: 280px;
+		top: 20vh;
+		left: 24vw;
+	}
+	.de {
+		width: 280px;
+		height: 280px;
+		top: 40vh;
+		right: 24vw;
+	}
+}
+@media screen and (max-width: 800px) {
 	.me, .de {
 	text-align: center;
 	width: 250px;
@@ -93,14 +107,14 @@ footer {
 		background: radial-gradient(lightpink, floralwhite);
 		position: absolute;
 		top: 20vh;
-		left: 10vw;
+		left: 12vw;
 		border: 3px solid lightpink;
 	}
 	.de {
 		background: radial-gradient(floralwhite, lightpink);
 		position: absolute;
 		top: 40vh;
-		right: 10vw;
+		right: 12vw;
 		border: 3px solid floralwhite;
 	}
 	li {
