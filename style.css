@@ -3,9 +3,14 @@
 	margin: 0;
 }
 header, footer {
-	background: radial-gradient(lightpink, floralwhite);
 	text-align: center;
 	letter-spacing: 1px;
+}
+header {
+	background: radial-gradient(lightpink, floralwhite);
+}
+footer {
+	background: radial-gradient(lightblue, aliceblue);
 }
 h1 {
 	padding: 10px;
@@ -50,14 +55,16 @@ li {
 a {
 	color: black;
 }
-.me, .de {
+.me, .de, .we {
 	text-align: center;
 	width: 300px;
 	height: 300px;
-	border-radius: 150px;
 	writing-mode: vertical-rl;
 	text-orientation: upright;
 } 
+.me, .de {
+	border-radius: 150px;
+}
 .me {
 	background: radial-gradient(lightpink, floralwhite);
 	position: absolute;
@@ -72,13 +79,24 @@ a {
 	right: 35vw;
 	border: 3px solid floralwhite;
 }
+.we {
+	background: radial-gradient(aliceblue, lightblue);
+	position: absolute;
+	top: 800px;
+	left: 41vw;
+	border: 3px solid aliceblue;
+}
 nav {
-	min-height: 785px;
+	margin-bottom: 200px;
 }
 footer {
-	padding: 1px;
-	position: relative;
-	transform: translateY(0%);
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	padding: 10px;
+	padding-right: 30px;
+	padding-left: 30px;
 }
 @media screen and (max-width: 1350px) {
 	.me {
@@ -95,32 +113,47 @@ footer {
 	}
 }
 @media screen and (max-width: 800px) {
-	.me, .de {
+	.me, .de, .we {
 	text-align: center;
 	width: 250px;
 	height: 250px;
-	border-radius: 200px;
 	writing-mode: vertical-rl;
 	text-orientation: upright;
 	}
-	.me {
+	.me, .de {
+		border-radius: 200px;
 		background: radial-gradient(lightpink, floralwhite);
 		position: absolute;
+	}
+	.me {
 		top: 20vh;
 		left: 12vw;
 		border: 3px solid lightpink;
 	}
 	.de {
-		background: radial-gradient(floralwhite, lightpink);
-		position: absolute;
 		top: 40vh;
 		right: 12vw;
 		border: 3px solid floralwhite;
+	}
+	.we {
+		position: absolute;
+		top: 80vh;
+		left: 25vw;
+		border: 3px solid aliceblue;
 	}
 	li {
 		font-size: 15pt;
 	}
 	p {
 		font-size: 13pt;
+	}
+	footer {
+		text-align: center;
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		padding: 5px;
+		padding-right: 15px;
+		padding-left: 15px;
 	}
 }
